@@ -32,3 +32,10 @@ $(call inherit-product, device/ldpi-common/ldpi.mk)
 
 ## Inherit overlays  (Most specific last)
 DEVICE_PACKAGE_OVERLAYS += device/samsung/callisto/overlay
+
+# ROM Manager app
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=teamkang \
+	ro.goo.board=$(TARGET_PRODUCT) \
+	ro.goo.rom=cm10.1_$(TARGET_PRODUCT) \
+	ro.goo.version=1
