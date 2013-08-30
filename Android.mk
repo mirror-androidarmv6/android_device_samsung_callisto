@@ -16,4 +16,9 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),callisto)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+# HACK for prebuilt libcamera
+$(shell mkdir -p $(OUT)/obj/SHARED_LIBRARIES/libcamera_intermediates)
+$(shell touch $(OUT)/obj/SHARED_LIBRARIES/libcamera_intermediates/export_includes)
+
 endif

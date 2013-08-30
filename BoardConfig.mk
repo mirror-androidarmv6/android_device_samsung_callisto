@@ -17,7 +17,7 @@
 # Product-specific compile-time definitions.
 #
 
-include device/samsung/msm7x27-common/BoardConfigCommon.mk
+include device/samsung/callisto/BoardConfigCommon.mk
 
 ## Graphics
 TARGET_DISABLE_TRIPLE_BUFFERING := true
