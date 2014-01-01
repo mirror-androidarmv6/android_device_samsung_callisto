@@ -21,6 +21,18 @@
 ## Build the ath6kl-compat driver
 BOARD_WLAN_DEVICE := ath6kl_compat
 
+## Input device configuration (IDC)
+PRODUCT_COPY_FILES += \
+    device/samsung/callisto/prebuilt/usr/idc/sec_keypad.idc:system/usr/idc/sec_keypad.idc
+
+## Keychars
+PRODUCT_COPY_FILES += \
+    device/samsung/callisto/prebuilt/usr/keychars/sec_keypad.kcm.bin:system/usr/keychars/sec_keypad.kcm.bin
+
+## Keylayout
+PRODUCT_COPY_FILES += \
+    device/samsung/callisto/prebuilt/usr/keylayout/sec_keypad.kl:system/usr/keylayout/sec_keypad.kl
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/callisto/ramdisk/init.gt-i5510board.parts.rc:root/init.gt-i5510board.parts.rc \
