@@ -23,7 +23,6 @@ BOARD_WLAN_DEVICE := ath6kl_compat
 
 ## Ramdisk
 PRODUCT_COPY_FILES += \
-    device/samsung/callisto/ramdisk/init.gt-i5510board.parts.rc:root/init.gt-i5510board.parts.rc \
     device/samsung/callisto/ramdisk/CALLISTO.rle:root/CALLISTO.rle
 
 # Inherit products (Most specific first)
