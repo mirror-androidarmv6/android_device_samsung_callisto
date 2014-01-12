@@ -21,6 +21,14 @@
 ## Build the ath6kl-compat driver
 BOARD_WLAN_DEVICE := ath6kl_compat
 
+## Keychars
+PRODUCT_COPY_FILES += \
+    device/samsung/callisto/prebuilt/usr/keychars/sec_keypad.kcm:system/usr/keychars/sec_keypad.kcm
+
+## Keymap
+PRODUCT_COPY_FILES += \
+    device/samsung/callisto/prebuilt/usr/keylayout/sec_keypad.kl:system/usr/keylayout/sec_keypad.kl
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/callisto/ramdisk/CALLISTO.rle:root/CALLISTO.rle
