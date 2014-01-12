@@ -21,6 +21,10 @@
 ## Build the ath6kl-compat driver
 BOARD_WLAN_DEVICE := ath6kl_compat
 
+## Keymap (rename sec_key to sec_keypad)
+PRODUCT_COPY_FILES += \
+    device/samsung/msm7x27-common/prebuilt/usr/keylayout/sec_key.kl:system/usr/keylayout/sec_keypad.kl
+
 ## Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/callisto/ramdisk/CALLISTO.rle:root/CALLISTO.rle
