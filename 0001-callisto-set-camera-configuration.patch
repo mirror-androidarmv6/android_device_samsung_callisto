@@ -1,0 +1,25 @@
+From 85deb3a95b55ec26ffa461ed5a7b4987c5867c18 Mon Sep 17 00:00:00 2001
+From: Conn O'Griofa <connogriofa@gmail.com>
+Date: Wed, 15 Jan 2014 01:04:59 +0000
+Subject: [PATCH] callisto: set camera configuration
+
+Change-Id: Ifaf71f0756a932fb66c13feca510be523baa3e11
+---
+ BoardConfig.mk | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/BoardConfig.mk b/BoardConfig.mk
+index 51da8c2..3f8d61f 100644
+--- a/BoardConfig.mk
++++ b/BoardConfig.mk
+@@ -33,3 +33,7 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := "<font_7x16.h>"
+ ## Bluetooth
+ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/callisto/bluetooth
+ 
++
++## Camera
++TARGET_PREBUILT_LIBCAMERA := false
++TARGET_CAMERA_SENSOR_SIZE := 3MP
+-- 
+1.8.3.2
+
